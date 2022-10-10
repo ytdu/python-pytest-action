@@ -1,0 +1,6 @@
+pytest-cov
+pytest-mock
+requests-mock
+pytruth
+hypothesis
+pyahocorasick
