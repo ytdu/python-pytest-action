@@ -1,0 +1,30 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.7, pytest-7.1.3, pluggy-1.0.0 -- /opt/hostedtoolcache/Python/3.10.7/x64/bin/python
+cachedir: .pytest_cache
+hypothesis profile 'default' -> database=DirectoryBasedExampleDatabase('/home/runner/work/python-pytest-action/python-pytest-action/.hypothesis/examples')
+rootdir: /home/runner/work/python-pytest-action/python-pytest-action, configfile: pytest.ini
+plugins: hypothesis-6.56.2, cov-4.0.0, mock-3.10.0, requests-mock-1.10.0
+collecting ... collected 5 items
+
+tests/common/files/test_json_utils.py::test_dump_places PASSED           [ 20%]
+tests/common/string/test_string_utils.py::test_to_caps PASSED            [ 40%]
+tests/common/string/test_string_utils.py::test_is_whole_word PASSED      [ 60%]
+tests/common/string/test_string_utils.py::test_str2bool PASSED           [ 80%]
+tests/common/string/test_trie_utils.py::test_iter_forms PASSED           [100%]
+
+- generated xml file: /home/runner/work/python-pytest-action/python-pytest-action/junit.xml -
+
+---------- coverage: platform linux, python 3.10.7-final-0 -----------
+Name                              Stmts   Miss  Cover   Missing
+---------------------------------------------------------------
+app/common/files/csv_utils.py         7      5    29%   5-9
+app/common/files/file_utils.py        3      1    67%   5
+app/common/files/json_utils.py       20     11    45%   5-10, 14-18
+app/common/string/trie_utils.py      32      5    84%   16-17, 21-22, 27
+---------------------------------------------------------------
+TOTAL                                86     22    74%
+
+5 files skipped due to complete coverage.
+Coverage XML written to file coverage.xml
+
+============================== 5 passed in 1.35s ===============================
